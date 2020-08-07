@@ -14,8 +14,8 @@ keywords = ["Accountants", "Dentists", "Pharmacies", "Doctors+Medical+Practition
             "Skip+Hire", "Car+Body+Repairs", "Tyres", "Barbers", "Fencing+Services", "Dry+Cleaners", "Vets"]
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36', "Upgrade-Insecure-Requests": "1","DNT": "1","Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","Accept-Language": "en-US,en;q=0.5","Accept-Encoding": "gzip, deflate"}
 
-for keyword in keywords:
-    url_link = 'https://www.yell.com/ucs/UcsSearchAction.do?find=Y&keywords='+keyword+'&location=uk&pageNum=%s'
+for keyword in keywords:             #You could make a variable to choose your own location here ↓
+    url_link = 'https://www.yell.com/ucs/UcsSearchAction.do?find=Y&keywords='+keyword+'&location=uk&pageNum=%s' 
     urls.append(url_link)
 
 for url in urls:
